@@ -27,10 +27,16 @@
     }
     
     const populateTodos = () => {
-    
-    }
-    let li = document.createElement('Li'); 
-    let text= document.ourElement.innerHTML;
-    console.log(text);
+        let todolist = document.getElementById('todo-list')  // access the 0l 
+        for (let i = 0; i < arrayOfTodos.length; i++) {
+            let todo = arrayOfTodos[i]
+            let li = document.createElement('li')  // create a new li item 
+            li.textContent = todo.title // get the text from the element
+            todolist.appendChild(li) // append the li to the ol
+        }
+      
+   //append the element to the OL 
 
- 
+   //for loops
+  
+    }
