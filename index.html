@@ -5,16 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<br>
+<div class="container">
+    <div class="header">
+        <h1>todo-list</h1>
+    </div>
+    <div class="instructions">
+   <h2>instructions on how to use our javascript to do list.</h2>
+  
+      <ol id="instructions-todo">
+        <a> 1.) click on Fetch Todos to get the todos from the server.</a>
+        <a> 2.) click on Log Todos to add a todo to the server.</a>
+        <a> 3.) click on Popilate Todos to populate the todos on the page. </a>
+    </div>
+        
 <body>
+<div class="content">
+    <div class="column-1">
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
+</div>
+<div class="column-2">
     <button onclick="populateTodos()">Populate Todos</button>
 
     <ol id="todo-list">
         
     </ol>
-
+    </div>
+    <br>
+    <br>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
