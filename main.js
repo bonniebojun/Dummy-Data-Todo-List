@@ -34,7 +34,10 @@
             li.textContent = todo.title // get the text from the element
             todolist.appendChild(li) // append the li to the ol
         }
-      
+    
+ 
+    
+    
    //append the element to the OL 
 
    //for loops
