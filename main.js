@@ -31,15 +31,27 @@
         for (let i = 0; i < arrayOfTodos.length; i++) {
             let todo = arrayOfTodos[i]
             let li = document.createElement('li')  // create a new li item 
-            li.textContent = todo.title // get the text from the element
+            li.textContent = todo.title + "" + todo.completed; // get the text from the element
             todolist.appendChild(li) // append the li to the ol
+            if (todo.completed) {
+                li.className += "cbox4";
+            }
         }
-    
- 
+       
+        }
+        //original code before adding the todo.completed//
+        // const populateTodos = () => {
+        //     let todolist = document.getElementById('todo-list')  // access the 0l 
+        //     for (let i = 0; i < arrayOfTodos.length; i++) {
+        //         let todo = arrayOfTodos[i]
+        //         let li = document.createElement('li')  // create a new li item 
+        //         li.textContent = todo.title // get the text from the element
+        //         todolist.appendChild(li) // append the li to the ol
+        //     }
     
     
    //append the element to the OL 
 
    //for loops
   
-    }
+    
