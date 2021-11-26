@@ -15,7 +15,7 @@ body {
 }
 h1 {
     color:black;
-    font-size: 50px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding-top: 50px;
@@ -78,3 +78,22 @@ h1 {
     padding-right: 20px;
     padding-bottom: 20px;
 }
+label {
+    font-size: 20px;
+  }
+  
+  input[type=checkbox]:checked + label {
+    color:red;
+    text-decoration: line-through;
+ 
+  }
+  #cbox3:checked + label {
+    color:blue;
+    text-decoration: line-through;
+  }
+  
+  .cbox4 {
+    font-size: 5em;
+    color:red;
+    text-decoration: line-through;
+  }
